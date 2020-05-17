@@ -64,6 +64,9 @@ ul {
 .btn-custom {
   background-color: rgb(230, 95, 120) !important;
 }
+.text-justify {
+  text-align: justify;
+}
 
 /* Navigation Bar */
 .custom-nav {
@@ -80,7 +83,7 @@ ul {
   border: none;
 }
 .custom-nav .navbar-nav li a {
-  color: #000 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
   font-size: 15px;
   margin: 0 7px;
   letter-spacing: 0.05em;
