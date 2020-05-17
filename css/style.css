@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+a, a:hover, a:active {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Common */
+.section {
+  padding: 100px 0 100px;
+}
+.text-custom {
+  color: rgb(230, 95, 120) !important;
+}
+.text-msg {
+  max-width: 500px;
+  line-height: 1.8;
+}
+.btn-custom {
+  background-color: rgb(230, 95, 120) !important;
+}
+
+/* Navigation Bar */
+.custom-nav {
+  background-color: #fff !important;
+  padding: 10px;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand {
+  height: 2rem;
+}
+.navbar-toggler {
+  color: #000;
+  font-size: 32px;
+  border: none;
+}
+.custom-nav .navbar-nav li a {
+  color: #000 !important;
+  font-size: 15px;
+  margin: 0 7px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  transition: all 0.5s;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.custom-nav .navbar-nav li a:active,
+.custom-nav .navbar-nav li a:hover {
+  color: rgb(230, 95, 120) !important;
+}
+
+/* Home Section */
+.btn {
+  padding: 15px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.5s;
+  letter-spacing: 0.6px;
+  color: #fff;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  outline: none !important;
+}
+.btn2 {
+  color: #000;
+}
+.btn-outline-custom {
+  border: 2px solid #f5f5f5;
+}
+.btn-outline-custom:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+.btn-outline-custom2 {
+  border: 2px solid #000;
+}
+.btn-outline-custom2:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.btn-round {
+  border-radius: 30px;
+}
+.home-inner {
+  background-image: url(../img/header-bg.jpg);
+}
+.home-inner::before {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+.caption {
+  width: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  color: #fff;
+}
+.landing-msg {
+  max-width: 500px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Service Section */
+.services-boxes {
+  border: 1px solid #e8e8e8;
+}
+.rounded {
+  border-radius: .25rm;
+}
+.services-boxes-icon i {
+  font-size: 42px;
+}
+.servies-title-border {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  transition: all 0.5s;
+  background-color: rgb(230, 95, 120);
+}
+.works-tag li {
+  display: inline-block;
+}
+.works-tag li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  transition: all 0.5s;
+}
+.works-tag li a.active,
+.works-tag li a:hover {
+  color: #fff;
+  background-color: rgb(230, 95, 120);
+  border-radius: 1.5rem;
+}
+
+/* Service Section */
+.fa-lapped {
+  position: relative;
+}
+
+.fa-mobile-alt {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  background: #fff;
+}
+
+/* Price Section */
+.price-list th, td{
+  padding: 1em;
+}
+
+/* Contact Section */
