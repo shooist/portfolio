@@ -160,7 +160,7 @@ ul {
   border: 1px solid #e8e8e8;
 }
 .rounded {
-  border-radius: .25rm;
+  border-radius: .25rem;
 }
 .services-boxes-icon i {
   font-size: 42px;
@@ -191,13 +191,23 @@ ul {
 
 /* Service Section */
 .fa-lapped {
+  display: inline-block;
   position: relative;
+  height: 4em;
+  line-height: 2em;
+  vertical-align: middle;
+  width: 2em;
+}
+
+.fa-desktop {
+  position: absolute;
+  left: -34px;
 }
 
 .fa-mobile-alt {
   position: absolute;
   top: 20px;
-  right: 60px;
+  left: 36px;
   background: #fff;
 }
 
