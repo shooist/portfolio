@@ -19,7 +19,7 @@ const imagemin = require("gulp-imagemin");
 const imageminPngquant = require("imagemin-pngquant");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 const imageminOption = [
-	imageminPngquant({ quality: "65-80" }),
+	imageminPngquant({ quality: [0.65, 0.8] }),
 	imageminMozjpeg({ quality: 85 }),
 	imagemin.gifsicle({
 		interlaced: false,
@@ -83,7 +83,7 @@ gulp.task("bs-reload", function(done) {
 
 gulp.task("imagemin", function() {
 	return gulp
-		.src("./img/**/*")
+		.src("./img/base/*.{png,jpg,gif,svg}")
 		.pipe(imagemin(imageminOption))
 		.pipe(gulp.dest("./img"));
 });
